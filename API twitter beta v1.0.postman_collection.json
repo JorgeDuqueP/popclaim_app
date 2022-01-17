@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "007d904b-543c-4e76-bdd8-14914cd3496b",
+		"name": "API twitter beta v1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear base de datos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/create_db",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"create_db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predicciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/predict?text=\"@anabel0944 Xa si en verdad ta xeveron aunque el iohone 12 pro max duraba 16 horas prefiero 20 horas de bateria jaja si compraras samsung que sea entre el s21 ultra o note 20 ultra, si vas por huawei vaya por el mate 40 pro o el p40 pro son lo mejor en bateria y camara\"",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"predict"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "\"@anabel0944 Xa si en verdad ta xeveron aunque el iohone 12 pro max duraba 16 horas prefiero 20 horas de bateria jaja si compraras samsung que sea entre el s21 ultra o note 20 ultra, si vas por huawei vaya por el mate 40 pro o el p40 pro son lo mejor en bateria y camara\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
